@@ -14,6 +14,6 @@ const options = {
 mongoose.connect(mongodb_connection_str, options).then(() => {
     console.log("Connected to mongodb successfully")
 }, err => {
-    Console.log("Database connection failed", err)
+    console.log("Database connection failed", err)
 })
 
