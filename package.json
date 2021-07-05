@@ -1,0 +1,19 @@
+{
+  "name": "newsapi",
+  "version": "0.0.1",
+  "description": "A RESTful web service to provide news from MongoDb atlas",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhina17/NewsAPI.git"
+  },
+  "author": "Dhina17 <dhinalogu@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dhina17/NewsAPI/issues"
+  },
+  "homepage": "https://github.com/Dhina17/NewsAPI#readme"
+}
