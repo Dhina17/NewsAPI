@@ -17,7 +17,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Listen to port
-app.listen(port, host)
+app.listen(port, host, () => {
+    console.log("app is running in " + host)
+})
 
 // call the route function
 routes(app)
