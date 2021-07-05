@@ -1,6 +1,5 @@
 // Include express, body express , api route, database connection
 const express = require("express")
-const bodyParser = require("body-parser")
 var routes = require("./api/routes/news_routes")
 require("./config/database")
 
@@ -10,9 +9,9 @@ const app = express()
 // port to run express app
 const port = process.env.PORT || 3000
 
-// Use body parser middleware on express app
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// Use express.{urlencoded(), json()} middlewares
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Listen to port
 app.listen(port)
