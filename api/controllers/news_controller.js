@@ -4,7 +4,7 @@ const news = require("../models/news")
 // Controller function.
 // function to get all news from the collection.
 exports.getAllNews = (request, response) => {
-    news.find({}, (error, allNews) => {
+    news.business.find({}, (error, allNews) => {
 
         // If error in find(), send the error response with code 500 (Internal Server Error).
         if (error) {
