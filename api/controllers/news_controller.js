@@ -85,7 +85,7 @@ exports.getAllNews = (request, response) => {
 
         // If error in find(), send the error response with code 500 (Internal Server Error).
         if (error) {
-            response.status(500).send(error)
+            return response.status(500).send(error)
         }
 
         // If success in find(), send all the news with success code 200.
@@ -94,6 +94,6 @@ exports.getAllNews = (request, response) => {
             success: true,
             data: allNews
         }
-        response.status(200).send(success)
+        return response.status(200).send(success)
     })
 }
