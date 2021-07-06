@@ -21,7 +21,7 @@ exports.getAllNews = (request, response) => {
     // If page size is less than or equal to 0,
     // Send error with code 400 bad request.
     if (page < 0 || page === 0) {
-        err = response = {
+        err = {
             "error": true,
             "message": "invalid page number," +
                 "should start with 1"
