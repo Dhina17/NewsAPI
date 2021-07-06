@@ -38,6 +38,10 @@ exports.getAllNews = (request, response) => {
             model = news.sports
             break
         }
+        case 'technology': {
+            model = news.technology
+            break
+        }
     }
 
     // Get the all news from the model and send it along with response.

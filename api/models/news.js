@@ -27,6 +27,7 @@ var generalModel = mongoose.model("general", newsSchema, "general")
 var healthModel = mongoose.model("health", newsSchema, "health")
 var scienceModel = mongoose.model("science", newsSchema, "science")
 var sportsModel = mongoose.model("sports", newsSchema, "sports")
+var technologyModel = mongoose.model("technology", newsSchema, "technology")
 
 // Export the models
 module.exports = {
@@ -35,5 +36,6 @@ module.exports = {
     general: generalModel,
     health: healthModel,
     science: scienceModel,
-    sports: sportsModel
+    sports: sportsModel,
+    technology: technologyModel
 }
