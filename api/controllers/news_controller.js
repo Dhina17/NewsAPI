@@ -26,7 +26,7 @@ exports.getAllNews = (request, response) => {
             "message": "invalid page number," +
                 "should start with 1"
         };
-        response.status(400).send(err)
+        return response.status(400).send(err)
     }
 
     // Declare model to hold the correct news model 
