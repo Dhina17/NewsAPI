@@ -9,15 +9,12 @@ const app = express()
 // port to run express app
 const port = process.env.PORT || 3000
 
-// Host
-const host = process.env.HOST
-
 // Use express.{urlencoded(), json()} middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Listen to port
-app.listen(port, host, () => {
+app.listen(port, () => {
     console.log("app is running in " + host)
 })
 
