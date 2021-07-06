@@ -89,6 +89,11 @@ exports.getAllNews = (request, response) => {
         }
 
         // If success in find(), send all the news with success code 200.
-        response.status(200).send(allNews)
+        // Create success respone.
+        success = {
+            success: true,
+            data: allNews
+        }
+        response.status(200).send(success)
     })
 }
