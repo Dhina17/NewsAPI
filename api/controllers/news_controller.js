@@ -97,3 +97,7 @@ exports.getAllNews = (request, response) => {
         return response.status(200).send(success)
     })
 }
+
+exports.getHome = (request, response) => {
+    return response.status(200).send("NewsAPI by Dhina17")
+}
